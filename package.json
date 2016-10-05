@@ -1,6 +1,6 @@
 {
   "name": "@octoblu/docker-hub-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Docker Hub API is an API library written for NodeJS to access the official Docker Hub/Registry",
   "main": "src/api.js",
   "engines": {
