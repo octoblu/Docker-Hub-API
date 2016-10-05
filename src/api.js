@@ -441,11 +441,12 @@
                 let obj = {
                     name,
                     namespace: username,
-                    active: true,
+                    active: details.active || true,
                     dockerhub_repo_name: `${username}/${name}`,
                     provider: details.provider,
                     vcs_repo_name: details.vcs_repo_name,
-                    is_private: false
+                    build_tags: details.build_tags,
+                    is_private: details.is_private || false,
                 };
 
                 if (typeof details.is_private === 'boolean') {

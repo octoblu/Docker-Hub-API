@@ -1,9 +1,17 @@
 language: node_js
 node_js:
-  - '4.2'
-  - '5'
+- '4.2'
+- '5'
 before_script:
-  - npm install -g gulp
+- npm install -g gulp
 cache:
   directories:
-    - $HOME/.npm
+  - "$HOME/.npm"
+deploy:
+  provider: npm
+  email: serveradmin@octoblu.com
+  api_key:
+    secure: MxHIT1nhURFyo8NptxjOK/K18Qgxf/r52Fds7DlLd3V4dBTVJ12TdVsh3x1yjTPHF/JdoF1SJWo7yuwHZFdUHABkX2DgT8lOr44RK0J3QQn2azGgFA3i0z5Iqwh0QWdPsp+aKJwUER77ZxIUISJsmeBxmbb2ogv/78IC1rUKJG7MdtaxxWCOwrH3rj6Tb7hpTlI8ncO/WcDChbZErfeafISQxMeILlBvUith5ZT/KKHlMg+5kUp3Q7HCBPL/PbX5jdowfYkGLPLX+6hY6MvEYTEaAoJ9LFEMU71eMhbsiyWSGgR3wh1Qj16jhh+7cpD8o1nib5k2tN5QULE7aaFrEIc1hYkKzQiUw9ydG4KfBA2qmetcZdCX+yAAzt4eRkeQw9LhWdlAneZsUsLVnOXnWfBkpUPgyIAZ/CJTPaLVls3lwkD9U+3z7UEXcp/B+rhdiu3yBXQzjJxh62XFm1kZU3eev4mhehg9XJEGdHdpjEdOJ6fUOc+eStnudBKUhPtBu3tWGni0uGCuEPC1qTW+B8p/kAQyqAOCo8QuQfbMgrnglNItL2Ha66biMXVfglofkVF01tFGaHTxXYTOlNl5qx4Pvox/DSzYyDiFtVLioLwpApZcDSF2/sTv3XVHYmuQU/YzzxUzjZeq4VAcjjV1Uznnx6JUN/8XVY75fpYPpiw=
+  on:
+    tags: true
+    repo: octoblu/Docker-Hub-API
